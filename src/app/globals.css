@@ -1,0 +1,358 @@
+@import "tailwindcss";
+/* globals.css */
+.neon-text {
+  color: #00ffff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.neon-button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.neon-button:hover {
+  background-color: #00ffff;
+  color: black;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+.neon-button:active {
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+.neon-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+.neon-glow {
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+}
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.15);
+  }
+}
+
+@keyframes blob2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 40px) scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.35;
+  }
+}
+@keyframes pulse2 {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.35;
+  }
+}
+@keyframes pulse3 {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.35;
+  }
+}
+@keyframes pulse4 {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.35;
+  }
+}
+/* Add these styles to your CSS file */
+
+/* Add these styles to your global CSS file */
+
+/* Contact Form */
+.contact-form {
+  background: rgba(0, 0, 0, 0.6); /* Transparency with black background */
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Inputs */
+.form-input,
+.form-textarea {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Transparent border with white */
+  border-radius: 8px;
+  color: white;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #39ff14;
+  outline: none;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+}
+
+/* Button Styles */
+.neon-button {
+  background-color: #39ff14;
+  color: black;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: #32cc10;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
+}
+
+.neon-button:disabled {
+  background-color: #757575;
+}
+
+/* Zero Gravity Effect */
+.zero-gravity:hover {
+  transform: scale(1.1) translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+/* Shooting Star Animation */
+@keyframes shootingStar {
+  0% {
+    transform: translateX(-100px) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100vw) translateY(100vh);
+    opacity: 1;
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: shootingStar 2s linear infinite;
+  box-shadow: 0 0 15px #fff, 0 0 30px #0ff, 0 0 45px #0ff;
+}
+
+/* Neon Glowing Effect */
+.neon-text {
+  text-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.neon-hover:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  transform: scale(1.05);
+}
+
+.neon-line-hover:hover {
+  border: 2px solid #0ff;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* Background Blob Animation */
+@keyframes blob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(100px, -100px) scale(1.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Neon Glow Animation */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+      0 0 30px #39ff14;
+    border-color: #39ff14;
+  }
+  25% {
+    box-shadow: 0 0 5px #ff073a, 0 0 10px #ff073a, 0 0 20px #ff073a,
+      0 0 30px #ff073a;
+    border-color: #ff073a;
+  }
+  50% {
+    box-shadow: 0 0 5px #ffb500, 0 0 10px #ffb500, 0 0 20px #ffb500,
+      0 0 30px #ffb500;
+    border-color: #ffb500;
+  }
+  75% {
+    box-shadow: 0 0 5px #00b5ff, 0 0 10px #00b5ff, 0 0 20px #00b5ff,
+      0 0 30px #00b5ff;
+    border-color: #00b5ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
+      0 0 30px #39ff14;
+    border-color: #39ff14;
+  }
+}
+
+/* Button styling */
+.neon-button {
+  position: relative;
+  border: 3px solid transparent;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  animation: neonGlow 3s infinite alternate;
+}
+
+.neon-button:hover {
+  color: black;
+  background-color: white;
+}
+/* Circular Neon Border Animation */
+@keyframes neonCircle {
+  0% {
+    border-color: #39ff14;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14,
+      0 0 40px #39ff14;
+  }
+  25% {
+    border-color: #ff073a;
+    box-shadow: 0 0 10px #ff073a, 0 0 20px #ff073a, 0 0 30px #ff073a,
+      0 0 40px #ff073a;
+  }
+  50% {
+    border-color: #ffb500;
+    box-shadow: 0 0 10px #ffb500, 0 0 20px #ffb500, 0 0 30px #ffb500,
+      0 0 40px #ffb500;
+  }
+  75% {
+    border-color: #00b5ff;
+    box-shadow: 0 0 10px #00b5ff, 0 0 20px #00b5ff, 0 0 30px #00b5ff,
+      0 0 40px #00b5ff;
+  }
+  100% {
+    border-color: #39ff14;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14,
+      0 0 40px #39ff14;
+  }
+}
+
+/* Button Styling */
+.neon-button {
+  position: relative;
+  border: 3px solid transparent;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14,
+    0 0 40px #39ff14;
+  animation: neonCircle 3s linear infinite; /* Animation applied */
+}
+
+/* Hover effect */
+.neon-button:hover {
+  color: black;
+  background-color: white;
+}
+/* Framer Motion initial animation styles */
+.header-enter {
+  animation: headerEnterAnimation 1s ease-out;
+}
+
+@keyframes headerEnterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zero Gravity Hover Effect */
+.zero-gravity {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease;
+}
+
+/* Apply the zero-gravity hover animation */
+.zero-gravity:hover {
+  transform: translateY(-10px) scale(1.1);
+  filter: blur(1px) saturate(1.5);
+}
+
+/* Optional: Additional glow effect for hover */
+.zero-gravity:hover {
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+}
+
+/* Hover Effect for the Project Cards */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+/* Hover Effects for the "Get in Touch" Button */
+a:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
